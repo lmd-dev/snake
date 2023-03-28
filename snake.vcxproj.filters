@@ -13,15 +13,21 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\console">
+      <UniqueIdentifier>{f65d1b2c-1a48-4b41-adc9-a88b39f783d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\console">
+      <UniqueIdentifier>{1d4d5fae-a8b0-4b6a-a88b-0f41942294df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\application">
+      <UniqueIdentifier>{66b83ecb-84a4-489f-a79c-00f99f7144d9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="Coordonnee.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Bonus.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="Serpent.cpp">
@@ -33,12 +39,30 @@
     <ClCompile Include="Jeu.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="Fabrique.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="FabriqueConsole.cpp">
+      <Filter>Fichiers sources\console</Filter>
+    </ClCompile>
+    <ClCompile Include="PlateauConsole.cpp">
+      <Filter>Fichiers sources\console</Filter>
+    </ClCompile>
+    <ClCompile Include="SerpentConsole.cpp">
+      <Filter>Fichiers sources\console</Filter>
+    </ClCompile>
+    <ClCompile Include="ZoneDessinConsole.cpp">
+      <Filter>Fichiers sources\console</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyManager.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Coordonnee.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Bonus.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="Serpent.h">
@@ -48,6 +72,27 @@
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="Jeu.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Fabrique.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="SerpentConsole.h">
+      <Filter>Fichiers d%27en-tête\console</Filter>
+    </ClInclude>
+    <ClInclude Include="PlateauConsole.h">
+      <Filter>Fichiers d%27en-tête\console</Filter>
+    </ClInclude>
+    <ClInclude Include="FabriqueConsole.h">
+      <Filter>Fichiers d%27en-tête\console</Filter>
+    </ClInclude>
+    <ClInclude Include="ZoneDessinConsole.h">
+      <Filter>Fichiers d%27en-tête\console</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyManager.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>

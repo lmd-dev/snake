@@ -1,14 +1,40 @@
 #include "Serpent.h"
 
 Serpent::Serpent(const Coordonnee& depart)
-	: croissance(0), direction(1, 0)
+	: croissance(4), direction(1, 0), perdu(false)
 {
 	parcours.push_back(depart);
 }
 
-const std::vector<Coordonnee>& Serpent::getParcours() const
+bool Serpent::getPerdu() const
 {
-	return parcours;
+	return perdu;
+}
+
+void Serpent::setPerdu(bool value)
+{
+	perdu = value;
+}
+
+void Serpent::setDirection(const Coordonnee& valeur)
+{
+	direction = valeur;
+}
+
+const Coordonnee& Serpent::getTete() const
+{
+	return parcours.at(parcours.size() - 1);
+}
+
+bool Serpent::contient(const Coordonnee& coordonnee, bool exclureTete) const
+{
+	for (auto it = parcours.begin(); it < parcours.end() - (exclureTete ? 1 : 0); ++it)
+	{
+		if ((*it) == coordonnee)
+			return true;
+	}
+
+	return false;
 }
 
 void Serpent::update()
@@ -20,5 +46,8 @@ void Serpent::update()
 		lastCoordonnee.getY() + direction.getY()
 	));
 
-	parcours.erase(parcours.begin(), parcours.begin() + 1);
+	if (croissance > 0)
+		--croissance;
+	else
+		parcours.erase(parcours.begin(), parcours.begin() + 1);
 }

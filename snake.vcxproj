@@ -139,19 +139,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Bonus.cpp" />
+    <ClCompile Include="Application.cpp" />
     <ClCompile Include="Coordonnee.cpp" />
+    <ClCompile Include="Fabrique.cpp" />
+    <ClCompile Include="FabriqueConsole.cpp" />
     <ClCompile Include="Jeu.cpp" />
+    <ClCompile Include="KeyManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Plateau.cpp" />
+    <ClCompile Include="PlateauConsole.cpp" />
     <ClCompile Include="Serpent.cpp" />
+    <ClCompile Include="SerpentConsole.cpp" />
+    <ClCompile Include="ZoneDessinConsole.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Bonus.h" />
+    <ClInclude Include="Application.h" />
     <ClInclude Include="Coordonnee.h" />
+    <ClInclude Include="Fabrique.h" />
+    <ClInclude Include="FabriqueConsole.h" />
     <ClInclude Include="Jeu.h" />
+    <ClInclude Include="KeyManager.h" />
     <ClInclude Include="Plateau.h" />
+    <ClInclude Include="PlateauConsole.h" />
     <ClInclude Include="Serpent.h" />
+    <ClInclude Include="SerpentConsole.h" />
+    <ClInclude Include="ZoneDessinConsole.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

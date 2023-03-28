@@ -1,6 +1,5 @@
 #pragma once
-#include <memory>
-#include "Bonus.h"
+#include "Coordonnee.h"
 
 /**
 * Représente le plateau de jeu
@@ -13,9 +12,6 @@ private:
 
 	//Hauteur du plateau
 	int hauteur;
-
-	//Bonus à récupérer
-	std::shared_ptr<Bonus> bonus;
 
 public:
 	/**
@@ -36,5 +32,17 @@ public:
 	* @return {int} La jhauteur du plateau
 	*/
 	int getHauteur() const;
+
+	/**
+	* Indique si la coordonnée donnée en paramètre se trouve en dehors du plateau
+	* @param {const Coordonnee&} La coordonnée à tester
+	* @return {bool} Retourne vrai si la coordonnée est en dehors de la zone couverte par le plateau
+	*/
+	bool estHorsPlateau(const Coordonnee& coordonnee);
+
+	/**
+	* Actualise le dessin du plateau
+	*/
+	virtual void dessiner() const = 0;
 };
 
