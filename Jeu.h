@@ -12,10 +12,10 @@ class Jeu
 {
 private:
 	//Plateau de jeu
-	Plateau* plateau;
+	std::shared_ptr<Plateau> plateau;
 
 	//Serpents des joueurs présents dans la partie
-	std::vector<Serpent*> serpents;
+	std::vector<std::shared_ptr<Serpent> > serpents;
 
 	//Fabrique à utiliser pour créer les éléments du jeu
 	const Fabrique& fabrique;

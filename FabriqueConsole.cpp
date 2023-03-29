@@ -8,12 +8,12 @@ FabriqueConsole::FabriqueConsole(ZoneDessinConsole& zd)
 
 }
 
-Plateau* FabriqueConsole::creerPlateau() const
+std::shared_ptr<Plateau> FabriqueConsole::creerPlateau() const
 {
-	return new PlateauConsole(zoneDessin);
+	return std::make_shared<PlateauConsole>(zoneDessin);
 }
 
-Serpent* FabriqueConsole::creerSerpent(const Coordonnee& depart) const
+std::shared_ptr<Serpent> FabriqueConsole::creerSerpent(const Coordonnee& depart) const
 {
-	return new SerpentConsole(depart, zoneDessin);
+	return std::make_shared<SerpentConsole>(depart, zoneDessin);
 }

@@ -19,15 +19,15 @@ public:
 
 	/**
 	* Crée un platau dont les dimensions sont définies par la zone de dessin
-	* @return {Plateau*} Retourne le plateau créé dynamiquement
+	* @return {std::shared_ptr<Plateau>} Retourne le plateau créé dynamiquement
 	*/
-	virtual Plateau* creerPlateau() const;
+	virtual std::shared_ptr<Plateau> creerPlateau() const;
 
 	/**
 	* Crée un serpent qui démarrera sa progression à partir des coordonnées fournies
 	* @param { const Coordonnee&} depart Coordonnée de départ du serpent
-	* @return { Serpent* } retourne le Serpent créé dynamiquement
+	* @return { std::shared_ptr <Serpent> } retourne le Serpent créé dynamiquement
 	*/
-	virtual Serpent* creerSerpent(const Coordonnee& depart) const;
+	virtual std::shared_ptr<Serpent> creerSerpent(const Coordonnee& depart) const;
 };
 
